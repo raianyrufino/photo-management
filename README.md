@@ -1,7 +1,3 @@
-# pic
-
-> photo management 
-
 ## Build Setup
 
 ``` bash
