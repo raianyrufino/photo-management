@@ -1,6 +1,5 @@
 # pic
 
-> photo management 
 
 ## Build Setup
 
