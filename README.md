@@ -1,6 +1,3 @@
-# pic
-
-
 ## Build Setup
 
 ``` bash
