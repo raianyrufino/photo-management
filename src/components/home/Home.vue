@@ -1,6 +1,6 @@
 <template>
     <div>    
-        <h1 class="titulo">Alurapic</h1>
+        <h1 class="titulo">Pic</h1>
         <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="filtre pelo título da foto">
         <ul class="lista-fotos">
           <li class="lista-fotos-item" v-for="foto in fotosComFiltro">
