@@ -1,4 +1,4 @@
-# alurapic
+# pic
 
 > A Vue.js project
 

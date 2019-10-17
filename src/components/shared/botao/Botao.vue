@@ -5,28 +5,20 @@
 export default {
 
    props: {
-            tipo: {
-                required: true,
-                type: String
-            },
+       tipo: {
+           type: String, 
+           required: true
+       },
 
-            rotulo: {
-                required: true,
-                type: String
-            },
+       rotulo: {
+           type: String, 
+           required: true
+       },
 
-            confirmacao: {
-                required: false,
-                default: false,
-                type: Boolean
-            },
-
-            estilo: {
-                required: false,
-                default: 'padrao',
-                type: String
-            }
-        },
+       confirmacao: Boolean,
+       estilo: String
+   },
+   
    methods: {
 
        disparaAcao() {
