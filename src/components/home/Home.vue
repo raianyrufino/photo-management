@@ -3,10 +3,15 @@
         <h1 class="titulo">Alurapic</h1>
         <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="filtre pelo título da foto">
         <ul class="lista-fotos">
-          <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
+          <li class="lista-fotos-item" v-for="foto in fotosComFiltro">
               <meu-painel :titulo="foto.titulo">
                 <imagem-responsiva :url="foto.url" :titulo="foto.titulo"/>
-                <meu-botao rotulo="remover" tipo="button" @botaoAtivado="remove(foto)"/>
+                <meu-botao 
+                  rotulo="remover" 
+                  tipo="button" 
+                  :confirmacao="true" 
+                  @botaoAtivado="remove(foto)"
+                  estilo="perigo"/>
               </meu-painel>
           </li>
         </ul>
@@ -55,7 +60,7 @@ export default {
              alert(foto.titulo);
          }
     }
-  }
+  },
 
   created() {
 
